@@ -10,15 +10,22 @@ import {
   BrowserRouter as Router,
   Switch,
   Route,
-  useParams,
+  useLocation,
 } from "react-router-dom";
 import { Redirect } from "react-router-dom/cjs/react-router-dom.min";
 import AnimationRevealPage from "helpers/AnimationRevealPage";
 
-const Page = () => {
-  const { id } = useParams();
+const useQuery = () => {
+  return new URLSearchParams(useLocation().search);
+};
 
-  const generator = new Generator(Number(id));
+const Page = () => {
+  const query = useQuery();
+  if (!query.get("seed")) {
+    return <Redirect to={`/startup-generator?seed=${new Date().getTime()}`} />;
+  }
+
+  const generator = new Generator(Number(query.get("seed")));
 
   const [random, startUp] = generator.initialize();
 
@@ -41,10 +48,9 @@ const App = () => {
   return (
     <Router>
       <Switch>
-        <Route path="/startup-generator_:id">
+        <Route>
           <Page />
         </Route>
-        <Redirect to={`/startup-generator_${new Date().getTime()}`} />
       </Switch>
     </Router>
   );
