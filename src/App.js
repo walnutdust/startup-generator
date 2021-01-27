@@ -39,10 +39,10 @@ const App = () => {
   return (
     <Router>
       <Switch>
-        <Route path="/:id">
+        <Route path="/startup-generator/:id/">
           <Page />
         </Route>
-        <Redirect to={`/${new Date().getTime()}`} />
+        <Redirect to={`/startup-generator/${new Date().getTime()}`} />
       </Switch>
     </Router>
   );

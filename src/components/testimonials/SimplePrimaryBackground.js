@@ -66,7 +66,6 @@ const SimplePrimaryBackground = () => {
   const subheading = testimonialsObject.subHeader;
   const description = testimonialsObject.description;
   const testimonials = testimonialsObject.testimonials;
-  console.log(testimonials);
 
   const [sliderRef, setSliderRef] = useState(null);
 
