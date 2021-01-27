@@ -1,4 +1,4 @@
-import React, { Suspense } from "react";
+import React from "react";
 import "style.css";
 
 import Generator from "./generator/generator";
@@ -29,9 +29,7 @@ const Page = () => {
   return (
     <ThemeContext.Provider value={randomTheme}>
       <StartupContext.Provider value={[random, startUp]}>
-        <Suspense fallback={null}>
-          <AnimationRevealPage>{startUp.pageElements}</AnimationRevealPage>
-        </Suspense>
+        <AnimationRevealPage>{startUp.pageElements}</AnimationRevealPage>
       </StartupContext.Provider>
     </ThemeContext.Provider>
   );

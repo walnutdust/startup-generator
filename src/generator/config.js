@@ -1,4 +1,3 @@
-import { lazy } from "react";
 import { ReactComponent as SupportIconImage } from "images/support-icon.svg";
 import { ReactComponent as ShieldIconImage } from "images/shield-icon.svg";
 import { ReactComponent as CustomizeIconImage } from "images/customize-icon.svg";
@@ -8,144 +7,66 @@ import { ReactComponent as BriefcaseIcon } from "feather-icons/dist/icons/briefc
 import { ReactComponent as MoneyIcon } from "feather-icons/dist/icons/dollar-sign.svg";
 import { ReactComponent as TimeIcon } from "feather-icons/dist/icons/clock.svg";
 
-const TwoColSingleFeatureWithStats = lazy(() =>
-  import("components/statistics/TwoColSingleFeatureWithStats")
-);
-const TwoColSingleFeatureWithStats2 = lazy(() =>
-  import("components/statistics/TwoColSingleFeatureWithStats2")
-);
-const ThreeColCenteredStatsPrimaryBackground = lazy(() =>
-  import("components/statistics/ThreeColCenteredStatsPrimaryBackground")
-);
+import TwoColSingleFeatureWithStats from "components/statistics/TwoColSingleFeatureWithStats";
+import TwoColSingleFeatureWithStats2 from "components/statistics/TwoColSingleFeatureWithStats2";
+import ThreeColCenteredStatsPrimaryBackground from "components/statistics/ThreeColCenteredStatsPrimaryBackground";
 
-const DashedBorderSixFeatures = lazy(() =>
-  import("components/features/DashedBorderSixFeatures")
-);
-const ThreeColSimple = lazy(() => import("components/features/ThreeColSimple"));
-const ThreeColWithSideImage = lazy(() =>
-  import("components/features/ThreeColWithSideImage")
-);
-const ThreeColWithSideImageWithPrimaryBackground = lazy(() =>
-  import("components/features/ThreeColWithSideImageWithPrimaryBackground")
-);
-const TwoColWithButton = lazy(() =>
-  import("components/features/TwoColWithButton")
-);
-const TwoColWithSteps = lazy(() =>
-  import("components/features/TwoColWithSteps")
-);
-const TwoColWithTwoFeaturesAndButtons = lazy(() =>
-  import("components/features/TwoColWithTwoFeaturesAndButtons")
-);
-const TwoColWithTwoHorizontalFeaturesAndButton = lazy(() =>
-  import("components/features/TwoColWithTwoHorizontalFeaturesAndButton")
-);
-const ThreeColContactDetails = lazy(() =>
-  import("components/features/ThreeColContactDetails")
-);
+import DashedBorderSixFeatures from "components/features/DashedBorderSixFeatures";
+import ThreeColSimple from "components/features/ThreeColSimple";
+import ThreeColWithSideImage from "components/features/ThreeColWithSideImage";
+import ThreeColWithSideImageWithPrimaryBackground from "components/features/ThreeColWithSideImageWithPrimaryBackground";
 
-const GridWithFeaturedPosts = lazy(() =>
-  import("components/blogs/GridWithFeaturedPost")
-);
-const PopularAndRecentBlogPosts = lazy(() =>
-  import("components/blogs/PopularAndRecentBlogPosts")
-);
-const ThreeColSimpleWithImage = lazy(() =>
-  import("components/blogs/ThreeColSimpleWithImage")
-);
-const ThreeColSimpleWithImageAndDashedBorder = lazy(() =>
-  import("components/blogs/ThreeColSimpleWithImageAndDashedBorder")
-);
+import TwoColWithButton from "components/features/TwoColWithButton";
 
-const SimplePrimaryBackground = lazy(() =>
-  import("components/testimonials/SimplePrimaryBackground")
-);
-const ThreeColumnWithProfileImage = lazy(() =>
-  import("components/testimonials/ThreeColumnWithProfileImage")
-);
-const TwoColumnWithImage = lazy(() =>
-  import("components/testimonials/TwoColumnWithImage")
-);
-const TwoColumnWithImageAndProfilePictureReview = lazy(() =>
-  import("components/testimonials/TwoColumnWithImageAndProfilePictureReview")
-);
-const TwoColumnWithImageAndRating = lazy(() =>
-  import("components/testimonials/TwoColumnWithImageAndRating")
-);
+import TwoColWithSteps from "components/features/TwoColWithSteps";
+import TwoColWithTwoFeaturesAndButtons from "components/features/TwoColWithTwoFeaturesAndButtons";
+import TwoColWithTwoHorizontalFeaturesAndButton from "components/features/TwoColWithTwoHorizontalFeaturesAndButton";
+import ThreeColContactDetails from "components/features/ThreeColContactDetails";
 
-const SimpleWithSideImage = lazy(() =>
-  import("components/faqs/SimpleWithSideImage")
-);
-const SingleCol = lazy(() => import("components/faqs/SingleCol"));
-const TwoColumnPrimaryBackground = lazy(() =>
-  import("components/faqs/TwoColumnPrimaryBackground")
-);
+import GridWithFeaturedPosts from "components/blogs/GridWithFeaturedPost";
+import PopularAndRecentBlogPosts from "components/blogs/PopularAndRecentBlogPosts";
+import ThreeColSimpleWithImage from "components/blogs/ThreeColSimpleWithImage";
+import ThreeColSimpleWithImageAndDashedBorder from "components/blogs/ThreeColSimpleWithImageAndDashedBorder";
 
-const FiveColumnDark = lazy(() => import("components/footers/FiveColumnDark"));
-const FiveColumnWithBackground = lazy(() =>
-  import("components/footers/FiveColumnWithBackground")
-);
-const FiveColumnWithInputForm = lazy(() =>
-  import("components/footers/FiveColumnWithInputForm")
-);
-const MiniCenteredFooter = lazy(() =>
-  import("components/footers/MiniCenteredFooter")
-);
-const SimpleFiveColumn = lazy(() =>
-  import("components/footers/SimpleFiveColumn")
-);
+import SimplePrimaryBackground from "components/testimonials/SimplePrimaryBackground";
+import ThreeColumnWithProfileImage from "components/testimonials/ThreeColumnWithProfileImage";
+import TwoColumnWithImage from "components/testimonials/TwoColumnWithImage";
+import TwoColumnWithImageAndProfilePictureReview from "components/testimonials/TwoColumnWithImageAndProfilePictureReview";
+import TwoColumnWithImageAndRating from "components/testimonials/TwoColumnWithImageAndRating";
 
-const ProfileThreeColGrid = lazy(() =>
-  import("components/cards/ProfileThreeColGrid")
-);
+import SimpleWithSideImage from "components/faqs/SimpleWithSideImage";
+import SingleCol from "components/faqs/SingleCol";
+import TwoColumnPrimaryBackground from "components/faqs/TwoColumnPrimaryBackground";
 
-const PortfolioTwoCardsWithImage = lazy(() =>
-  import("components/cards/PortfolioTwoCardsWithImage")
-);
-const ThreeColSlider = lazy(() => import("components/cards/ThreeColSlider"));
-const TwoTrendingPreviewCardsWithImage = lazy(() =>
-  import("components/cards/TwoTrendingPreviewCardsWithImage")
-);
+import FiveColumnDark from "components/footers/FiveColumnDark";
+import FiveColumnWithBackground from "components/footers/FiveColumnWithBackground";
+import FiveColumnWithInputForm from "components/footers/FiveColumnWithInputForm";
+import MiniCenteredFooter from "components/footers/MiniCenteredFooter";
+import SimpleFiveColumn from "components/footers/SimpleFiveColumn";
 
-const GetStarted = lazy(() => import("components/cta/GetStarted"));
-const GetStartedLight = lazy(() => import("components/cta/GetStartedLight"));
-const DownloadApp = lazy(() => import("components/cta/DownloadApp"));
+import ProfileThreeColGrid from "components/cards/ProfileThreeColGrid";
 
-// Heros
-const BackgroundAsImage = lazy(() =>
-  import("components/hero/BackgroundAsImage")
-);
+import PortfolioTwoCardsWithImage from "components/cards/PortfolioTwoCardsWithImage";
+import ThreeColSlider from "components/cards/ThreeColSlider";
+import TwoTrendingPreviewCardsWithImage from "components/cards/TwoTrendingPreviewCardsWithImage";
 
-const BackgroundAsImageWithCenteredContent = lazy(() =>
-  import("components/hero/BackgroundAsImageWithCenteredContent")
-);
-const FullWidthWithImage = lazy(() =>
-  import("components/hero/FullWidthWithImage")
-);
-const TwoColumnWithFeaturesAndTestimonial = lazy(() =>
-  import("components/hero/TwoColumnWithFeaturesAndTestimonial")
-);
-const TwoColumnWithInput = lazy(() =>
-  import("components/hero/TwoColumnWithInput")
-);
-const TwoColumnWithPrimaryBackground = lazy(() =>
-  import("components/hero/TwoColumnWithPrimaryBackground")
-);
-const TwoColumnWithVideo = lazy(() =>
-  import("components/hero/TwoColumnWithVideo")
-);
+import GetStarted from "components/cta/GetStarted";
+import GetStartedLight from "components/cta/GetStartedLight";
+import DownloadApp from "components/cta/DownloadApp";
 
-// Forms
-const SimpleContactUs = lazy(() => import("components/forms/SimpleContactUs"));
-const SimpleSubscribeNewsletter = lazy(() =>
-  import("components/forms/SimpleSubscribeNewsletter")
-);
-const TwoColContactUsWithIllustration = lazy(() =>
-  import("components/forms/TwoColContactUsWithIllustration")
-);
-const TwoColContactUsWithIllustrationFullForm = lazy(() =>
-  import("components/forms/TwoColContactUsWithIllustrationFullForm")
-);
+import BackgroundAsImage from "components/hero/BackgroundAsImage";
+
+import BackgroundAsImageWithCenteredContent from "components/hero/BackgroundAsImageWithCenteredContent";
+import FullWidthWithImage from "components/hero/FullWidthWithImage";
+import TwoColumnWithFeaturesAndTestimonial from "components/hero/TwoColumnWithFeaturesAndTestimonial";
+import TwoColumnWithInput from "components/hero/TwoColumnWithInput";
+import TwoColumnWithPrimaryBackground from "components/hero/TwoColumnWithPrimaryBackground";
+import TwoColumnWithVideo from "components/hero/TwoColumnWithVideo";
+
+import SimpleContactUs from "components/forms/SimpleContactUs";
+import SimpleSubscribeNewsletter from "components/forms/SimpleSubscribeNewsletter";
+import TwoColContactUsWithIllustration from "components/forms/TwoColContactUsWithIllustration";
+import TwoColContactUsWithIllustrationFullForm from "components/forms/TwoColContactUsWithIllustrationFullForm";
 
 const grammar = {
   startUp: [
