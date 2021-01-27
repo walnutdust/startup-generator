@@ -6,9 +6,19 @@
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
-    "react": "^17.0.1",
-    "react-dom": "^17.0.1",
+    "feather-icons": "^4.28.0",
+    "framer-motion": "^3.2.1",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-modal": "^3.12.1",
+    "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.1",
+    "react-slick": "^0.27.14",
+    "slick-carousel": "^1.8.1",
+    "styled-components": "^5.2.1",
+    "tailwindcss": "1.9.6",
+    "twin.macro": "1.12.1",
+    "use-in-view": "^1.0.15",
     "web-vitals": "^0.2.4"
   },
   "scripts": {
@@ -34,5 +44,6 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "devDependencies": {}
 }
