@@ -79,6 +79,7 @@ const TwoColWithButton = ({
               imageRounded && tw`rounded`,
               imageBorder && tw`border`,
               imageShadow && tw`shadow`,
+              tw`w-full`,
             ]}
           />
           {imageDecoratorBlob && <DecoratorBlob css={imageDecoratorBlobCss} />}

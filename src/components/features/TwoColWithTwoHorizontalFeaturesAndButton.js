@@ -104,6 +104,7 @@ const TwoColWithTwoHorizontalFeaturesAndButton = ({
               imageRounded && tw`rounded`,
               imageBorder && tw`border`,
               imageShadow && tw`shadow`,
+              tw`w-full`,
             ]}
           />
           {showDecoratorBlob && <DecoratorBlob />}
