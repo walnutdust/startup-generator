@@ -41,10 +41,7 @@ const Feature = tw.div`mt-10 lg:mt-8 flex items-center md:items-start flex-col m
 const FeatureHeadingContainer = tw.div`flex items-center`;
 const FeatureIconContainer = styled.div`
   ${tw`mx-auto inline-block border border-primary-500 text-primary-500 text-center rounded p-2 flex-shrink-0`}
-  ${(props) => [
-    props.iconRoundedFull && tw`rounded-full`,
-    props.iconFilled && tw`border-0 bg-primary-500 text-gray-100`,
-  ]}
+  ${(props) => [props.iconRoundedFull && tw`rounded-full`]}
   svg {
     ${tw`w-5 h-5`}
   }
@@ -122,11 +119,11 @@ const TwoColWithTwoHorizontalFeaturesAndButton = ({
                 <Feature key={index}>
                   <FeatureHeadingContainer>
                     <FeatureIconContainer
-                      iconFilled={iconFilled}
                       iconRoundedFull={iconRoundedFull}
                       css={[
                         feature.iconContainerCss || iconContainerCss,
-                        theme.bgColor500,
+                        iconFilled && theme.bgColor500,
+                        iconFilled && tw`border-0 text-gray-100`,
                       ]}
                     >
                       {feature.imageSrc}
