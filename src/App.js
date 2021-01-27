@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Suspense } from "react";
 import "style.css";
 
 import Generator from "./generator/generator";
@@ -29,7 +29,9 @@ const Page = () => {
   return (
     <ThemeContext.Provider value={randomTheme}>
       <StartupContext.Provider value={[random, startUp]}>
-        <AnimationRevealPage>{startUp.pageElements}</AnimationRevealPage>
+        <Suspense fallback={null}>
+          <AnimationRevealPage>{startUp.pageElements}</AnimationRevealPage>
+        </Suspense>
       </StartupContext.Provider>
     </ThemeContext.Provider>
   );
@@ -39,10 +41,10 @@ const App = () => {
   return (
     <Router>
       <Switch>
-        <Route path="/startup-generator/:id/">
+        <Route path="/startup-generator_:id">
           <Page />
         </Route>
-        <Redirect to={`/startup-generator/${new Date().getTime()}`} />
+        <Redirect to={`/startup-generator_${new Date().getTime()}`} />
       </Switch>
     </Router>
   );
