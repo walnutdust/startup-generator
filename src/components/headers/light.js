@@ -8,7 +8,6 @@ import { css } from "styled-components/macro"; //eslint-disable-line
 
 import useAnimatedNavToggler from "helpers/useAnimatedNavToggler.js";
 
-import logo from "images/logo.svg";
 import { ReactComponent as MenuIcon } from "feather-icons/dist/icons/menu.svg";
 import { ReactComponent as CloseIcon } from "feather-icons/dist/icons/x.svg";
 
@@ -71,7 +70,7 @@ const LightHeader = ({
 
   const defaultLogoLink = (
     <LogoLink css={[theme.hocusTextColor500]} href="/">
-      <img src={logo} alt="logo" />
+      <img src={startUp.icon.normal} alt="logo" />
       {startUp.name}
     </LogoLink>
   );

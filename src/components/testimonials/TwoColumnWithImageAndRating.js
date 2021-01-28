@@ -1,3 +1,4 @@
+import "slick-carousel/slick/slick.css";
 import React, { useContext, useState } from "react";
 import { ThemeContext } from "contexts/themeContext";
 import { StartupContext } from "contexts/startUpContext";

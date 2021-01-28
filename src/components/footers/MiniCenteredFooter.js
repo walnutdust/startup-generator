@@ -3,7 +3,6 @@ import { StartupContext } from "contexts/startUpContext";
 import tw from "twin.macro";
 import styled from "styled-components";
 import { Container as ContainerBase } from "components/misc/Layouts.js";
-import logo from "images/logo.svg";
 import { ReactComponent as FacebookIcon } from "images/facebook-icon.svg";
 import { ReactComponent as TwitterIcon } from "images/twitter-icon.svg";
 import { ReactComponent as YoutubeIcon } from "images/youtube-icon.svg";
@@ -32,14 +31,13 @@ const CopyrightText = tw.p`text-center mt-10 font-medium tracking-wide text-sm t
 const MiniCenteredFooter = () => {
   // eslint-disable-next-line no-unused-vars
   const [random, startUp] = useContext(StartupContext);
-  const name = startUp.name;
-  const companyName = name ?? "Treact";
+  const companyName = startUp.name;
   return (
     <Container>
       <Content>
         <Row>
           <LogoContainer>
-            <LogoImg src={logo} />
+            <LogoImg src={startUp.icon.normal} />
             <LogoText>{companyName}</LogoText>
           </LogoContainer>
           <LinksContainer>

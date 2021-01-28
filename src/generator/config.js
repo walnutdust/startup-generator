@@ -9,6 +9,14 @@ import { ReactComponent as BriefcaseIcon } from "feather-icons/dist/icons/briefc
 import { ReactComponent as MoneyIcon } from "feather-icons/dist/icons/dollar-sign.svg";
 import { ReactComponent as TimeIcon } from "feather-icons/dist/icons/clock.svg";
 
+import icon1 from "images/icon1.svg";
+import icon2 from "images/icon2.svg";
+import icon3 from "images/icon3.svg";
+
+import icon1light from "images/icon1-light.svg";
+import icon2light from "images/icon2-light.svg";
+import icon3light from "images/icon3-light.svg";
+
 const TwoColSingleFeatureWithStats = lazy(() =>
   import("components/statistics/TwoColSingleFeatureWithStats")
 );
@@ -158,6 +166,7 @@ const grammar = {
       subslogan: "<subslogan>",
       features: ["<feature>", "<feature>", "<feature>"],
       notification: ["<notification>"],
+      icon: "<icon>",
 
       services: {
         header: "<servicesHeader>",
@@ -249,6 +258,13 @@ const grammar = {
       pageElements: "<pageElements>",
     },
   ],
+
+  icon: [
+    { light: [() => icon1light], normal: () => icon1 },
+    { light: [() => icon2light], normal: () => icon2 },
+    { light: [() => icon3light], normal: () => icon3 },
+  ],
+
   companyName: ["<startUpPrefix><startUpSuffix>"],
   startUpName: ["<companyName>"],
   slogan: [{ start: "<sloganPartI>", emphasis: "<sloganPartII>" }],
@@ -283,7 +299,7 @@ const grammar = {
     "Perfection. Enhanced.",
     "All that you ever needed.",
     "Welcome. To the Future.",
-    "<mundaneActivity>? <startUpName>",
+    "<mundaneActivity>? <startUpName>.",
     "The new <mundaneActivity> experience.",
     "Just <startUpName> it.",
     "Everything you never knew you needed.",

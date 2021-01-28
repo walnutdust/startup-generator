@@ -30,6 +30,7 @@ const Page = () => {
   const [random, startUp] = generator.initialize();
 
   document.title = startUp.name;
+  document.getElementById("favicon").href = startUp.icon.normal;
 
   const themeObjects = Object.values(themes);
   const randomTheme = themeObjects[random.nextInt() % themeObjects.length];
