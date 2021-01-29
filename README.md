@@ -12,7 +12,7 @@ built with [Treact](https://treact.owaiskhan.me/) components.
 ## Usage
 
 A live demo is available [here](https://walnutdust.github.io/startup-generator),
-but interested users can
+but interested users can build and run it with `yarn start` or `npm run start`.
 
 ## Contributors
 
