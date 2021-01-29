@@ -14,6 +14,11 @@ built with [Treact](https://treact.owaiskhan.me/) components.
 A live demo is available [here](https://walnutdust.github.io/startup-generator),
 but interested users can build and run it with `yarn start` or `npm run start`.
 
+## Screenshots
+
+![Sample hero](screenshots/header.png)
+![Sample body](screenshots/body.png)
+
 ## Contributors
 
 Garett Tok Ern Liang [(walnutdust)](https://github.com/walnutdust/)
